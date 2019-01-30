@@ -1,0 +1,6 @@
+; UTOP_RelShift_Dual.def : 宣告 DLL 的模組參數。
+
+LIBRARY
+
+EXPORTS
+    ; 明確匯出可置於此

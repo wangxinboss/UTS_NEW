@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{3850292e-7849-454b-8265-f930bec6aeb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseOtp">
+      <UniqueIdentifier>{4826cf80-65f0-4020-abae-d182c52a75e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm">
+      <UniqueIdentifier>{7d8358fb-6425-481c-8d9a-36babdb1ea55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\PDAF">
+      <UniqueIdentifier>{89376bbc-7166-4100-bd69-1a389d6ac8ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\PDAF\Qualcomm">
+      <UniqueIdentifier>{4c8104a3-f1bd-4e6c-8e99-946e2a561f7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\PDAF\Qualcomm\RevJ">
+      <UniqueIdentifier>{e0590572-ce60-438e-abae-a6cc54d4351d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\PDAF\MTK">
+      <UniqueIdentifier>{f6d6ae90-90a7-4ead-9cbf-5c3abe2a15ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\PDAF\MTK\DLL3.0">
+      <UniqueIdentifier>{166c9c30-e250-4636-9f67-9a060c7f1c37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\PDAF\Qualcomm\REVL">
+      <UniqueIdentifier>{2e5390a0-f912-4e63-8c3d-6a3d436d822a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\LSC">
+      <UniqueIdentifier>{be3089c1-4468-4409-9d88-89c5ced77f7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\LSC\5E2">
+      <UniqueIdentifier>{dc6afa98-78bd-4414-85a7-4d3b08bc3353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseOtp\OV16885">
+      <UniqueIdentifier>{7d7c4ea5-a559-450e-81d6-45c711a648d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseOtp\S5K4H7">
+      <UniqueIdentifier>{3c6aaee8-dc0c-4608-90dc-ce7149f554f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseOtp\S5K4H7\MF86A">
+      <UniqueIdentifier>{7d3546ff-637c-40df-ab58-d4c3266729af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseOtp\S5K4H7\HNE5030">
+      <UniqueIdentifier>{9fb77014-1e48-4df9-9642-bd11e42ab53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseOtp\S5K3P9SX">
+      <UniqueIdentifier>{f3a81a37-fc5b-4981-b34f-ddefa0d841e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseOtp\S5K3P9SX\HNF1065">
+      <UniqueIdentifier>{bea6aeca-ef4d-4dc8-bcb6-cd01be1b4231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseOtp\S5K3P9SX\MF83Y">
+      <UniqueIdentifier>{f9c5fd86-4f09-4fdb-87d2-0d473ce1bae4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="UTOP_Otp.def">
+      <Filter>原始程式檔</Filter>
+    </None>
+    <None Include="res\UTOP_Otp.rc2">
+      <Filter>資源檔</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UTOP_Otp.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="ImplOperator.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_CheckFW.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_DCCCali_Qualcomm.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_DCCCali_SONY.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_DCCVerify_Qualcomm.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_DCCVerify_SONY.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_GyroCali.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_GyroCali_NonShaker.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_HallCali.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_LoadFW.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_LSCCali.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_OISCheck.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_QualcommCal.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_SPCCali.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_WBCali.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\Focus_MTF.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\OVOtp.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\SamsungOtp.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\SonyOtp.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_DCCCali_MTK.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\Ref\MTK_PDAF\PDAF_MTK.cpp">
+      <Filter>Comm\PDAF\MTK\DLL3.0</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_DCCVerify_MTK.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAF_QulComm_RevL.cpp">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\Testbench.cpp">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\Testbench_utils.cpp">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAF_QulComm_LSC.cpp">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\BaseOtp_LSCCali_5E2.cpp">
+      <Filter>Comm\LSC\5E2</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\HiOtp.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\Project\OV16885_MA84F\OtpCali_OV16885_MA84F.cpp">
+      <Filter>BaseOtp\OV16885</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\Project\S5K4H7_MF86A\OtpCali_S5K4H7_MF86A.cpp">
+      <Filter>BaseOtp\S5K4H7\MF86A</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\Project\S5K4H7_HNE5030\OtpCali_S5K4H7_HNE5030.cpp">
+      <Filter>BaseOtp\S5K4H7\HNE5030</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\Project\S5K3P9SX_HNF1065\OtpCali_S5K3P9SX_HNF1065.cpp">
+      <Filter>BaseOtp\S5K3P9SX\HNF1065</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\Project\S5K3P9SX_MF83Y\OtpCali_S5K3P9SX_MF83Y.cpp">
+      <Filter>BaseOtp\S5K3P9SX\MF83Y</Filter>
+    </ClCompile>
+    <ClCompile Include="Otp\CrossTalk.cpp">
+      <Filter>BaseOtp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UTOP_Otp.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ImplOperator.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\BaseOtp.h">
+      <Filter>BaseOtp</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\Focus_MTF.h">
+      <Filter>BaseOtp</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\OVOtp.h">
+      <Filter>BaseOtp</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\SamsungOtp.h">
+      <Filter>BaseOtp</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\SonyOtp.h">
+      <Filter>BaseOtp</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\Ref\MTK_PDAF\PDAF_MTK.h">
+      <Filter>Comm\PDAF\MTK\DLL3.0</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\LSC.h">
+      <Filter>BaseOtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAF_QulComm_RevL.h">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAFCalibrationTools_Context.h">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAFCalibrationTools_Dll.h">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAFCalibrationTools_EEPROM.h">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAF_QulComm_LSC.h">
+      <Filter>Comm\PDAF\Qualcomm\REVL</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\HiOtp.h">
+      <Filter>BaseOtp</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\Project\OV16885_MA84F\OtpCali_OV16885_MA84F.h">
+      <Filter>BaseOtp\OV16885</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\Project\S5K4H7_MF86A\OtpCali_S5K4H7_MF86A.h">
+      <Filter>BaseOtp\S5K4H7\MF86A</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\Project\S5K4H7_HNE5030\OtpCali_S5K4H7_HNE5030.h">
+      <Filter>BaseOtp\S5K4H7\HNE5030</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\Project\S5K3P9SX_HNF1065\OtpCali_S5K3P9SX_HNF1065.h">
+      <Filter>BaseOtp\S5K3P9SX\HNF1065</Filter>
+    </ClInclude>
+    <ClInclude Include="Otp\Project\S5K3P9SX_MF83Y\OtpCali_S5K3P9SX_MF83Y.h">
+      <Filter>BaseOtp\S5K3P9SX\MF83Y</Filter>
+    </ClInclude>
+    <ClInclude Include="CrossTalk.h">
+      <Filter>BaseOtp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTOP_Otp.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

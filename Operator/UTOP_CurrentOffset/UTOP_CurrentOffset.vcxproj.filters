@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{0f6693a6-161e-4805-a15e-9af8f6020261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{f107bf1d-c4f2-4d77-9ae1-6c4a2d6b4b83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTOP_CurrentOffset.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UTOP_CurrentOffset.def">
+      <Filter>Other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTOP_CurrentOffset.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentOffsetOperator.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="UTOP_CurrentOffset.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentOffsetOperator.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTOP_CurrentOffset.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

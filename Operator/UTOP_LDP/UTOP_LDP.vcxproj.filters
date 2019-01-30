@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{2c1fae4b-1b89-4c14-a977-7d8b131675a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{a5625b68-da53-4e28-b048-6525db7d5ce3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTOP_LDP.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UTOP_LDP.def">
+      <Filter>Other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTOP_LDP.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="LDPStdOperator.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="UTOP_LDP.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="LDPStdOperator.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTOP_LDP.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

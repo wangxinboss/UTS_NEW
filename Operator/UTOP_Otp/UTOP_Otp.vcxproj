@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1FDC5CBE-2C94-42F0-B1F3-0C3E04B914E9}</ProjectGuid>
+    <RootNamespace>UTOP_Otp</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\_property_\Operator.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\_property_\Operator.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\3rdparty\ddm\include;$(SolutionDir)..\..\3rdparty\NonShaker\include;$(SolutionDir)..\..\3rdparty\PDAF_SONY;$(SolutionDir)..\..\3rdparty\PDAF\QualComm\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\3rdparty\ddm\lib\Debug;$(SolutionDir)..\..\3rdparty\PDAF_SONY;$(SolutionDir)..\..\3rdparty\NonShaker\lib\Debug;$(SolutionDir)..\..\3rdparty\PDAF\MTK\DLL_3.0.1.0322\x86\;$(SolutionDir)..\..\3rdparty\PDAF\QualComm\REVL\;$(SolutionDir)..\..\3rdparty\LSC_Lib\Samsung\S5K4H8\;$(SolutionDir)..\..\3rdparty\LSC_Lib\Samsung\S5K5E2\;$(SolutionDir)..\..\3rdparty\LSC_Lib\Hynix\MA80D\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(SolutionDir)..\..\3rdparty\ddm\lib\Release;$(SolutionDir)..\..\3rdparty\PDAF_SONY;$(SolutionDir)..\..\3rdparty\PDAF\QualComm;$(SolutionDir)..\..\3rdparty\NonShaker\lib\Debug;$(SolutionDir)..\..\3rdparty\PDAF\MTK\DLL_3.0.1.0322\x86\;$(SolutionDir)..\..\3rdparty\PDAF\QualComm\REVL;$(SolutionDir)..\..\3rdparty\LSC_Lib\Samsung\S5K5E8\;$(SolutionDir)..\..\3rdparty\LSC_Lib\Samsung\S5K4H7\;$(SolutionDir)..\..\3rdparty\LSC_Lib\Samsung\S5K4H8\;$(SolutionDir)..\..\3rdparty\LSC_Lib\Samsung\S5K5E2\;$(SolutionDir)..\..\3rdparty\LSC_Lib\Hynix\MA80D\;$(SolutionDir)..\..\3rdparty\LSC_Lib\OV\OV13855\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\..\3rdparty\ddm\include;$(SolutionDir)..\..\3rdparty\NonShaker\include;$(SolutionDir)..\..\3rdparty\PDAF_SONY;$(SolutionDir)..\..\3rdparty\PDAF\QualComm\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPERATOR_EXPORTS;WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\UTOP_Otp.def</ModuleDefinitionFile>
+      <AdditionalDependencies>UTSFramework.lib;UTSAlgorithm.lib;PDAFCalibrationTools_RevL_Dll.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPERATOR_EXPORTS;WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\UTOP_Otp.def</ModuleDefinitionFile>
+      <AdditionalDependencies>UTSFramework.lib;UTSAlgorithm.lib;PDAFCalibrationTools_RevL_Dll.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\UTOP_Otp.rc2" />
+    <None Include="UTOP_Otp.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAF_QulComm_LSC.cpp" />
+    <ClCompile Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAF_QulComm_RevL.cpp" />
+    <ClCompile Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\Testbench.cpp" />
+    <ClCompile Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\Testbench_utils.cpp" />
+    <ClCompile Include="ImplOperator.cpp" />
+    <ClCompile Include="Otp\BaseOtp.cpp" />
+    <ClCompile Include="Otp\BaseOtp_CheckFW.cpp" />
+    <ClCompile Include="Otp\BaseOtp_DCCCali_MTK.cpp" />
+    <ClCompile Include="Otp\BaseOtp_DCCCali_Qualcomm.cpp" />
+    <ClCompile Include="Otp\BaseOtp_DCCCali_SONY.cpp" />
+    <ClCompile Include="Otp\BaseOtp_DCCVerify_MTK.cpp" />
+    <ClCompile Include="Otp\BaseOtp_DCCVerify_Qualcomm.cpp" />
+    <ClCompile Include="Otp\BaseOtp_DCCVerify_SONY.cpp" />
+    <ClCompile Include="Otp\BaseOtp_GyroCali.cpp" />
+    <ClCompile Include="Otp\BaseOtp_GyroCali_NonShaker.cpp" />
+    <ClCompile Include="Otp\BaseOtp_HallCali.cpp" />
+    <ClCompile Include="Otp\BaseOtp_LoadFW.cpp" />
+    <ClCompile Include="Otp\BaseOtp_LSCCali.cpp" />
+    <ClCompile Include="Otp\BaseOtp_LSCCali_5E2.cpp" />
+    <ClCompile Include="Otp\BaseOtp_OISCheck.cpp" />
+    <ClCompile Include="Otp\BaseOtp_QualcommCal.cpp" />
+    <ClCompile Include="Otp\BaseOtp_SPCCali.cpp" />
+    <ClCompile Include="Otp\BaseOtp_WBCali.cpp" />
+    <ClCompile Include="Otp\CrossTalk.cpp" />
+    <ClCompile Include="Otp\Focus_MTF.cpp" />
+    <ClCompile Include="Otp\HiOtp.cpp" />
+    <ClCompile Include="Otp\OVOtp.cpp" />
+    <ClCompile Include="Otp\Project\OV16885_MA84F\OtpCali_OV16885_MA84F.cpp" />
+    <ClCompile Include="Otp\Project\S5K3P9SX_HNF1065\OtpCali_S5K3P9SX_HNF1065.cpp" />
+    <ClCompile Include="Otp\Project\S5K3P9SX_MF83Y\OtpCali_S5K3P9SX_MF83Y.cpp" />
+    <ClCompile Include="Otp\Project\S5K4H7_HNE5030\OtpCali_S5K4H7_HNE5030.cpp" />
+    <ClCompile Include="Otp\Project\S5K4H7_MF86A\OtpCali_S5K4H7_MF86A.cpp" />
+    <ClCompile Include="Otp\Ref\MTK_PDAF\PDAF_MTK.cpp" />
+    <ClCompile Include="Otp\SamsungOtp.cpp" />
+    <ClCompile Include="Otp\SonyOtp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UTOP_Otp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAFCalibrationTools_Context.h" />
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAFCalibrationTools_Dll.h" />
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAFCalibrationTools_EEPROM.h" />
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAF_QulComm_LSC.h" />
+    <ClInclude Include="..\..\..\3rdparty\PDAF\Qualcomm\REVL\PDAF_QulComm_RevL.h" />
+    <ClInclude Include="CrossTalk.h" />
+    <ClInclude Include="ImplOperator.h" />
+    <ClInclude Include="Otp\BaseOtp.h" />
+    <ClInclude Include="Otp\Focus_MTF.h" />
+    <ClInclude Include="Otp\HiOtp.h" />
+    <ClInclude Include="Otp\LSC.h" />
+    <ClInclude Include="Otp\OVOtp.h" />
+    <ClInclude Include="Otp\Project\OV16885_MA84F\OtpCali_OV16885_MA84F.h" />
+    <ClInclude Include="Otp\Project\S5K3P9SX_HNF1065\OtpCali_S5K3P9SX_HNF1065.h" />
+    <ClInclude Include="Otp\Project\S5K3P9SX_MF83Y\OtpCali_S5K3P9SX_MF83Y.h" />
+    <ClInclude Include="Otp\Project\S5K4H7_HNE5030\OtpCali_S5K4H7_HNE5030.h" />
+    <ClInclude Include="Otp\Project\S5K4H7_MF86A\OtpCali_S5K4H7_MF86A.h" />
+    <ClInclude Include="Otp\Ref\MTK_PDAF\PDAF_MTK.h" />
+    <ClInclude Include="Otp\SamsungOtp.h" />
+    <ClInclude Include="Otp\SonyOtp.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UTOP_Otp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTOP_Otp.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

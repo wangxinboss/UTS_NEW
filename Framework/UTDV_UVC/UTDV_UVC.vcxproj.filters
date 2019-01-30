@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{9c7ecaa5-0e8a-4bfc-94b1-5076c5eb7341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{0d1b1199-48b9-4af9-b6fc-9e647dd5543e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\DSP">
+      <UniqueIdentifier>{267f10fc-ef93-40bf-90f4-0c9a36dbdd0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\DSP\DspFullboom">
+      <UniqueIdentifier>{2de723ad-024f-4791-9a9b-c46b539e1163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\DSP\DspDummy">
+      <UniqueIdentifier>{92b62020-823a-4fa2-aa8e-d74c8dc830eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\DSP\DspRealtek">
+      <UniqueIdentifier>{e9cc6379-5a14-401e-88ae-c41316b43f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\DSP\DspRealtek\DspRealtek_5806">
+      <UniqueIdentifier>{760cc937-7896-4d1f-a2f9-d1f85d4a54c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\DSP\DspRealtek\DspRealtek_5838">
+      <UniqueIdentifier>{d34bd34d-0f10-4d1c-aae1-09ba051166a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTDV_UVC.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UTDV_UVC.def">
+      <Filter>Other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTDV_UVC.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptureVideo.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="USBFrameHandler.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="UVCDevice.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="UVCDeviceSettingDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDsp.cpp">
+      <Filter>Impl\DSP</Filter>
+    </ClCompile>
+    <ClCompile Include="DspFullboom.cpp">
+      <Filter>Impl\DSP\DspFullboom</Filter>
+    </ClCompile>
+    <ClCompile Include="DspDummy.cpp">
+      <Filter>Impl\DSP\DspDummy</Filter>
+    </ClCompile>
+    <ClCompile Include="UVCDeviceRegisterDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="UVCDeviceI2CDlg.cpp" />
+    <ClCompile Include="Realtek\RvcLibFun.cpp">
+      <Filter>Impl\DSP\DspRealtek</Filter>
+    </ClCompile>
+    <ClCompile Include="Realtek\User.cpp">
+      <Filter>Impl\DSP\DspRealtek</Filter>
+    </ClCompile>
+    <ClCompile Include="Realtek\RT_5806\DspRealtek.cpp">
+      <Filter>Impl\DSP\DspRealtek\DspRealtek_5806</Filter>
+    </ClCompile>
+    <ClCompile Include="Realtek\RT_5838\DspRealtek_RT5838.cpp">
+      <Filter>Impl\DSP\DspRealtek\DspRealtek_5838</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="UTDV_UVC.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptureVideo.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="USBFrameHandler.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UVCDevice.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UVCDeviceSettingDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDsp.h">
+      <Filter>Impl\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DspFullboom.h">
+      <Filter>Impl\DSP\DspFullboom</Filter>
+    </ClInclude>
+    <ClInclude Include="DspDummy.h">
+      <Filter>Impl\DSP\DspDummy</Filter>
+    </ClInclude>
+    <ClInclude Include="UVCDeviceRegisterDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UVCDeviceI2CDlg.h" />
+    <ClInclude Include="Realtek\User.h">
+      <Filter>Impl\DSP\DspRealtek</Filter>
+    </ClInclude>
+    <ClInclude Include="Realtek\RvcLibFun.h">
+      <Filter>Impl\DSP\DspRealtek</Filter>
+    </ClInclude>
+    <ClInclude Include="Realtek\RT_5806\DspRealtek.h">
+      <Filter>Impl\DSP\DspRealtek\DspRealtek_5806</Filter>
+    </ClInclude>
+    <ClInclude Include="Realtek\RT_5838\DspRealtek_RT5838.h">
+      <Filter>Impl\DSP\DspRealtek\DspRealtek_5838</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTDV_UVC.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

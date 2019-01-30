@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{c0b3e10a-fdaf-4b75-8e5a-0d220ba11809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{a118024e-c05a-43ed-bfde-a417da40f53d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTSMain.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\UTSMain.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\checkboxes.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="UTSMain.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildView.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="RightDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="TestItemMFCListCtrl.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="TestOperatorListDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectConfig.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="OperatorSpecDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorcodeDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="OperatorMergerDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckHeadCtrl.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckListCtrl.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTSMain.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="RightDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemMFCListCtrl.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="TestOperatorListDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectConfig.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="OperatorSpecDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorcodeDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="OperatorMergerDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckHeadCtrl.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckListCtrl.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTSMain.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

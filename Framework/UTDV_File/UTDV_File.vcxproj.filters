@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{0de17e8e-ae44-43ac-8e56-e034e9991bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{eaae2ab6-acab-4527-8f16-8022915b0a28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTDV_File.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UTDV_File.def">
+      <Filter>Other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTDV_File.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDevice.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDeviceSettingDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="UTDV_File.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDevice.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDeviceSettingDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTDV_File.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

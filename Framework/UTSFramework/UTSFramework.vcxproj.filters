@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="other">
+      <UniqueIdentifier>{5f43a3fe-e72c-4cb0-870c-dab18d4623ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{c0210463-b2e4-4ed5-9dc7-93d262252b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\DB">
+      <UniqueIdentifier>{afdef3e3-f4a9-4d52-8891-33a5e55741bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\DB\Local">
+      <UniqueIdentifier>{37e68269-1924-4d0d-9e3c-1042789e7c17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTSFramework.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UTSFramework.def">
+      <Filter>other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTSFramework.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDevice.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseOperator.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ListLogDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ListLog.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="UTS.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="UIBoardProtocol.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorCode.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFlow.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformInfo.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageFile.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Jpegfile.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="DBLocalConfig.cpp">
+      <Filter>Impl\DB\Local</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="UTSFramework.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDevice.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseOperator.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ListLogDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ListLog.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UTSDefine.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UTS.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Export.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UIBoardProtocol.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorCode.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFlow.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformInfo.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageFile.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Jpegfile.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="DBLocalConfig.h">
+      <Filter>Impl\DB\Local</Filter>
+    </ClInclude>
+    <ClInclude Include="DBLocalConfigSql.h">
+      <Filter>Impl\DB\Local</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMark.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTSFramework.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

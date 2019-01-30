@@ -1,0 +1,240 @@
+OUTLINE
+
+/*************************************************/
+	000B
+/*************************************************/
+[Date]
+	2015.09.01
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.Change the Pan/Tilt threshold.
+
+[Reason]
+ 1.Change the threshold 0x00100000 to 0x00010000.
+ 1.Change the coefficient 0x7FFA0000 to 0x7FF00000.
+
+[File]
+ 1.Ois.h
+ 2.FromCode.h
+ 
+/*************************************************/
+	000A
+/*************************************************/
+[Date]
+	2015.07.03
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.Gyro limitter expand for 1.4degree.
+ 2.WPB enable check function.
+ 3.Pan/Tilt algrithm improve.
+
+[Reason]
+ 1.Modify the ram 0x8374, 0x8380, 0x83E0.
+ 2.Check WPB level before flash write.
+ 3.Change DSP process.
+
+[File]
+ 1.Ois.h
+ 2.FromCode.h
+ 3.FlsCmd.c
+
+/*************************************************/
+	0009
+/*************************************************/
+[Date]
+	2015.06.18
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.Oval limiter bug fix.
+ 2.Add MakeMD5 function.
+
+[Reason]
+ 1.Oval limiter bug fix.
+ 2.Add MakeMD5() function.
+
+[File]
+ 1.Ois.h
+ 2.FromCode.h
+ 3.FlsCmd.c
+
+/*************************************************/
+	0008
+/*************************************************/
+[Date]
+	2015.06.10
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.AF hall filter modified.
+ 2.Add download target check function.
+
+[Reason]
+ 1.AF hall filter modified.
+ 2.Check the LSI before download in FlashUpdate() function.
+
+[File]
+ 1.Ois.h
+ 2.FromCode.h
+ 3.OisCmd.c
+ 3.FlsCmd.c
+
+/*************************************************/
+	0007
+/*************************************************/
+[Date]
+	2015.06.09
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.re-compiled for LC898123AXD.
+ 2.Add actuator check function.
+ 3.Add gyro check function.
+ 4.Add oval gyro limiter.
+ 5.Define the data type.
+
+[Reason]
+ 1.re-complie the DSP code.
+ 2.Add TneHea() function.
+ 3.Add TneGea() function.
+
+[File]
+ 1.Ois.h
+ 2.FromCode.h
+ 3.OisCmd.c
+
+/*************************************************/
+	0006
+/*************************************************/
+[Date]
+	2015.06.01
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.Modified the intialize sequence of gyro.
+
+[Reason]
+ 1.Modified initialize sequence.
+
+[File]
+ 1.Ois.h
+ 2.FromCode.h
+
+/*************************************************/
+	0005
+/*************************************************/
+[Date]
+	2015.05.30
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.Extend wait time before initialize of gyro.
+
+[Reason]
+ 1.Wait time from 70ms to 140ms.
+
+[File]
+ 1.Ois.h
+ 2.FromCode.h
+
+/*************************************************/
+	0004
+/*************************************************/
+[Date]
+	2015.05.29
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.Modify NVC calibration move step from 0x0E55 to 0X1000.
+ 2.Modify TneADO movable range from 85um to 130um.
+ 3.Add NVC calibration direction initialize function.
+ 4.Modify the gyro filter coefficients.
+
+[Reason]
+ 1.SLT_OFFSET is 0x1000.
+ 2.SPEC_RANGE is 130.0.
+ 3.Add IniNvc().
+ 4.Modify the FromCode.h file.
+
+[File]
+ 1.Ois.h
+ 2.OisCmd.c
+ 3.FromCode.h
+
+/*************************************************/
+	0003
+/*************************************************/
+[Date]
+	2015.05.21
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.Add NVR read write function.
+ 2.Add Natural center adjustment function.
+ 3.Add Magic code erase by DSP LESS mode.
+ 4.Add No vibrator calibration functions.
+
+[Reason]
+ 1.Add CalSectorWrite() function.
+ 2.Add CalSectorRead() function.
+ 3.Add TneADO() function.
+ 4.Add DSPLESSEraseMagicCode() function.
+ 5.Add OisI2c.h and OisI2c.c files for DSP LESS access.
+ 5.Add TneSltPos(), TneVrtPos() and TneHrzPos() functions.
+
+[File]
+ 1.Ois.h
+ 2.OisCmd.c
+ 3.OisI2c.h
+ 4.OisI2c.c
+
+/*************************************************/
+	0002
+/*************************************************/
+[Date]
+	2015.05.05
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.flash verify error issue fix
+
+[Reason]
+ 1.flash verify bug fix
+
+[File]
+ 1.Ois.h
+ 2.FlsCmd.c
+
+/*************************************************/
+	0001
+/*************************************************/
+[Date]
+	2015.04.27
+[Name]
+	Y.Hayashi
+	
+[Change point]
+ 1.reference code first release
+
+[Reason]
+ 1.first release
+
+[File]
+ 1.Ois.h
+ 2.OisCmd.h
+ 3.FromCode.h
+ 4.FlsCmd.c
+ 5.md5.c
+ 6.md5.h

@@ -1,0 +1,205 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (78904f59).
+//
+// c:\users\newsmart\desktop\nst\holitechmesdll\dll_vc++ demo\testdll\debug\mesdll.tlh
+//
+// C++ source equivalent of Win32 type library MESDLL.tlb
+// compiler-generated file created 01/24/18 at 11:23:31 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace MESDLL {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("55441f93-b68a-3be9-96a1-a038014bf02d"))
+/* LIBID */ __MESDLL;
+struct /* coclass */ Security;
+struct /* coclass */ SqlDataProvider;
+struct /* coclass */ Common;
+struct /* coclass */ ComRegHelp;
+struct /* coclass */ Win32DllWrap;
+struct /* coclass */ Net;
+struct __declspec(uuid("66742d2c-076d-4d77-9fa0-77b6af1279ef"))
+/* dual interface */ ISQLServer;
+struct /* coclass */ SQLServer;
+enum DESType;
+struct SpecifyFieldInfo;
+struct __declspec(uuid("888269dc-59ba-30ab-af86-fdaf75e8bc84"))
+/* dual interface */ _Security;
+struct __declspec(uuid("959f4508-eaeb-3f7f-9a98-dbf50499a7ce"))
+/* dual interface */ _SqlDataProvider;
+struct __declspec(uuid("263d1be0-e9e6-319e-868b-16a699a0a2fa"))
+/* dual interface */ _Common;
+struct __declspec(uuid("5c892e0a-d0d6-3df5-b60d-6b6135a2dd10"))
+/* dual interface */ _ComRegHelp;
+struct __declspec(uuid("b52c5b10-1da2-3ec2-9324-f77ccf7e8c51"))
+/* dual interface */ _Win32DllWrap;
+struct __declspec(uuid("66e4dba3-1b2d-3471-a49c-0998b2fe4801"))
+/* dual interface */ _Net;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ISQLServer, __uuidof(ISQLServer));
+_COM_SMARTPTR_TYPEDEF(_Security, __uuidof(_Security));
+_COM_SMARTPTR_TYPEDEF(_SqlDataProvider, __uuidof(_SqlDataProvider));
+_COM_SMARTPTR_TYPEDEF(_Common, __uuidof(_Common));
+_COM_SMARTPTR_TYPEDEF(_ComRegHelp, __uuidof(_ComRegHelp));
+_COM_SMARTPTR_TYPEDEF(_Win32DllWrap, __uuidof(_Win32DllWrap));
+_COM_SMARTPTR_TYPEDEF(_Net, __uuidof(_Net));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("a850271b-9f0f-3e50-8b8b-157a17f94355"))
+Security;
+    // [ default ] interface _Security
+    // interface _Object
+
+struct __declspec(uuid("387bdd04-ea8c-36c3-bc3f-8e7cc2b17b13"))
+SqlDataProvider;
+    // [ default ] interface _SqlDataProvider
+    // interface _Object
+    // interface IDisposable
+
+struct __declspec(uuid("6e21c661-0b6a-3dd3-81c1-8677a63069b7"))
+Common;
+    // [ default ] interface _Common
+    // interface _Object
+
+struct __declspec(uuid("40dcbea0-997f-393e-9130-f8477a2cd96e"))
+ComRegHelp;
+    // [ default ] interface _ComRegHelp
+    // interface _Object
+
+struct __declspec(uuid("d8443fce-2d5d-3807-8c99-2bc288580a93"))
+Win32DllWrap;
+    // [ default ] interface _Win32DllWrap
+    // interface _Object
+    // interface IDisposable
+
+struct __declspec(uuid("a5cda2cd-e210-383b-b49a-769abcbfb258"))
+Net;
+    // [ default ] interface _Net
+    // interface _Object
+
+struct __declspec(uuid("66742d2c-076d-4d77-9fa0-77b6af1279ef"))
+ISQLServer : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t CheckRoute (
+        _bstr_t Application,
+        _bstr_t Barcode,
+        _bstr_t Station,
+        _bstr_t Line,
+        _bstr_t Version );
+    _bstr_t CommitTestData (
+        _bstr_t Application,
+        _bstr_t MESData,
+        _bstr_t TestData );
+    _bstr_t GetSpecialValue (
+        _bstr_t Application,
+        _bstr_t Type,
+        _bstr_t Parameters );
+    _bstr_t UpdateSpecialValue (
+        _bstr_t Application,
+        _bstr_t Type,
+        _bstr_t UpdateParameters,
+        _bstr_t WhereParameters );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CheckRoute (
+        /*[in]*/ BSTR Application,
+        /*[in]*/ BSTR Barcode,
+        /*[in]*/ BSTR Station,
+        /*[in]*/ BSTR Line,
+        /*[in]*/ BSTR Version,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_CommitTestData (
+        /*[in]*/ BSTR Application,
+        /*[in]*/ BSTR MESData,
+        /*[in]*/ BSTR TestData,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetSpecialValue (
+        /*[in]*/ BSTR Application,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR Parameters,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_UpdateSpecialValue (
+        /*[in]*/ BSTR Application,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR UpdateParameters,
+        /*[in]*/ BSTR WhereParameters,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("e686d573-5743-426c-a4c2-ead34611f546"))
+SQLServer;
+    // interface _Object
+    // [ default ] interface ISQLServer
+
+enum __declspec(uuid("e070bcee-de92-33e3-bc92-67678ebf9f92"))
+DESType
+{
+    DESType_Encrypt = 1,
+    DESType_Decrypt = 2
+};
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("f29f46b3-b9b6-3309-b5cd-cb8aa78997c3"))
+SpecifyFieldInfo
+{
+    LPSTR FieldName;
+    LPSTR DataType;
+    long IsIdentity;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("888269dc-59ba-30ab-af86-fdaf75e8bc84"))
+_Security : IDispatch
+{};
+
+struct __declspec(uuid("959f4508-eaeb-3f7f-9a98-dbf50499a7ce"))
+_SqlDataProvider : IDispatch
+{};
+
+struct __declspec(uuid("263d1be0-e9e6-319e-868b-16a699a0a2fa"))
+_Common : IDispatch
+{};
+
+struct __declspec(uuid("5c892e0a-d0d6-3df5-b60d-6b6135a2dd10"))
+_ComRegHelp : IDispatch
+{};
+
+struct __declspec(uuid("b52c5b10-1da2-3ec2-9324-f77ccf7e8c51"))
+_Win32DllWrap : IDispatch
+{};
+
+struct __declspec(uuid("66e4dba3-1b2d-3471-a49c-0998b2fe4801"))
+_Net : IDispatch
+{};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\users\newsmart\desktop\nst\holitechmesdll\dll_vc++ demo\testdll\debug\mesdll.tli"
+
+} // namespace MESDLL
+
+#pragma pack(pop)

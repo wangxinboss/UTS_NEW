@@ -1,0 +1,22 @@
+#ifndef Global_Memory_h__
+#define Global_Memory_h__
+
+struct TestItemResult
+{
+    CString sItemName;
+    CString sHeader;
+    CString sData;
+    CString sSFC_Filter;
+};
+
+struct GLOBAL_MEMORY_SFC
+{
+    // SFC
+    CString sSFC_ServerTime;
+    CString sSFC_ErrorCode;
+    CString sSFC_ErrorDesc;
+    BOOL bOverAllResult;
+    std::vector<TestItemResult> vecTestItemResult;
+};
+
+#endif // Global_Memory_NTD_h__

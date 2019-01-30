@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6956EF85-4EAA-4929-B098-299E0CC98AA4}</ProjectGuid>
+    <RootNamespace>UTS_Sensor</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\_property_\Framework.props" />
+    <Import Project="..\..\_property_\ddm_Debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\_property_\Framework.props" />
+    <Import Project="..\..\_property_\ddm_Release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SENSOR_EXPORTS;WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\UTS_Sensor.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SENSOR_EXPORTS;WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\UTS_Sensor.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="res\UTS_Sensor.rc2" />
+    <None Include="UTS_Sensor.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AdapterDev.cpp" />
+    <ClCompile Include="SensorDriver.cpp" />
+    <ClCompile Include="SensorDriver\AR1337\AR1337.cpp" />
+    <ClCompile Include="SensorDriver\GC2385\GC2385.cpp" />
+    <ClCompile Include="SensorDriver\GC5024\GC5024.cpp" />
+    <ClCompile Include="SensorDriver\GC5025\GC5025.cpp" />
+    <ClCompile Include="SensorDriver\GC5034\GC5034.cpp" />
+    <ClCompile Include="SensorDriver\GC8024\GC8024.cpp" />
+    <ClCompile Include="SensorDriver\Hi546\Hi546.cpp" />
+    <ClCompile Include="SensorDriver\Hi556\Hi556.cpp" />
+    <ClCompile Include="SensorDriver\Hi846\Hi846.cpp" />
+    <ClCompile Include="SensorDriver\Hynix1333\Hynix1333.cpp" />
+    <ClCompile Include="SensorDriver\Hynix843\Hynix843.cpp" />
+    <ClCompile Include="SensorDriver\IMX214\IMX214.cpp" />
+    <ClCompile Include="SensorDriver\IMX362\IMX362.cpp" />
+    <ClCompile Include="SensorDriver\IMX363\IMX363.cpp" />
+    <ClCompile Include="SensorDriver\IMX386\IMX386.cpp" />
+    <ClCompile Include="SensorDriver\IMX499\IMX499.cpp" />
+    <ClCompile Include="SensorDriver\IMX519\IMX519.cpp" />
+    <ClCompile Include="SensorDriver\OV12870\OV12870.cpp" />
+    <ClCompile Include="SensorDriver\OV12A10\OV12A10.cpp" />
+    <ClCompile Include="SensorDriver\OV13855\OV13855.cpp" />
+    <ClCompile Include="SensorDriver\OV13858\OV13858.cpp" />
+    <ClCompile Include="SensorDriver\OV16885\OV16885.cpp" />
+    <ClCompile Include="SensorDriver\OV4688\OV4688.cpp" />
+    <ClCompile Include="SensorDriver\OV5648\OV5648.cpp" />
+    <ClCompile Include="SensorDriver\OV5675\OV5675.cpp" />
+    <ClCompile Include="SensorDriver\OV5695\OV5695.cpp" />
+    <ClCompile Include="SensorDriver\OV8856\OV8856.cpp" />
+    <ClCompile Include="SensorDriver\OV9750\OV9750.cpp" />
+    <ClCompile Include="SensorDriver\S5K2L7\S5K2L7.cpp" />
+    <ClCompile Include="SensorDriver\S5K2P7\S5K2P7.cpp" />
+    <ClCompile Include="SensorDriver\S5K3L6\S5K3L6.cpp" />
+    <ClCompile Include="SensorDriver\S5K3L8XX\S5K3L8XX.cpp" />
+    <ClCompile Include="SensorDriver\S5K3P3\S5K3P3.cpp" />
+    <ClCompile Include="SensorDriver\S5K3P8\S5K3P8.cpp" />
+    <ClCompile Include="SensorDriver\S5K3P9SP\S5K3P9SP.cpp" />
+    <ClCompile Include="SensorDriver\S5K3P9SX\S5K3P9SX.cpp" />
+    <ClCompile Include="SensorDriver\S5K4H7YX\S5K4H7YX.cpp" />
+    <ClCompile Include="SensorDriver\S5K4H8YX\S5K4H8YX.cpp" />
+    <ClCompile Include="SensorDriver\S5K5E2YA\S5K5E2YA.cpp" />
+    <ClCompile Include="SensorDriver\S5K5E8YX\S5K5E8YX.cpp" />
+    <ClCompile Include="SensorDriver\S5K5E9\S5K5E9.cpp" />
+    <ClCompile Include="SensorDriver\SP0A09\SP0A09.cpp" />
+    <ClCompile Include="SensorDriver\SP2509V\SP2509V.cpp" />
+    <ClCompile Include="SensorDriver\SP250A\SP250A.cpp" />
+    <ClCompile Include="SensorDriver\VirtualSensor\VirtualSensor.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UTS_Sensor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdapterDev.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SensorDriver.h" />
+    <ClInclude Include="SensorDefine.h" />
+    <ClInclude Include="SensorDriver\AR1337\AR1337.h" />
+    <ClInclude Include="SensorDriver\GC2385\GC2385.h" />
+    <ClInclude Include="SensorDriver\GC5024\GC5024.h" />
+    <ClInclude Include="SensorDriver\GC5025\GC5025.h" />
+    <ClInclude Include="SensorDriver\GC5034\GC5034.h" />
+    <ClInclude Include="SensorDriver\GC8024\GC8024.h" />
+    <ClInclude Include="SensorDriver\Hi546\Hi546.h" />
+    <ClInclude Include="SensorDriver\Hi556\Hi556.h" />
+    <ClInclude Include="SensorDriver\Hi846\Hi846.h" />
+    <ClInclude Include="SensorDriver\Hynix1333\Hynix1333.h" />
+    <ClInclude Include="SensorDriver\Hynix843\Hynix843.h" />
+    <ClInclude Include="SensorDriver\IMX214\IMX214.h" />
+    <ClInclude Include="SensorDriver\IMX362\IMX362.h" />
+    <ClInclude Include="SensorDriver\IMX363\IMX363.h" />
+    <ClInclude Include="SensorDriver\IMX386\IMX386.h" />
+    <ClInclude Include="SensorDriver\IMX499\IMX499.h" />
+    <ClInclude Include="SensorDriver\IMX519\IMX519.h" />
+    <ClInclude Include="SensorDriver\OV12870\OV12870.h" />
+    <ClInclude Include="SensorDriver\OV12A10\OV12A10.h" />
+    <ClInclude Include="SensorDriver\OV13855\OV13855.h" />
+    <ClInclude Include="SensorDriver\OV13858\OV13858.h" />
+    <ClInclude Include="SensorDriver\OV16885\OV16885.h" />
+    <ClInclude Include="SensorDriver\OV4688\OV4688.h" />
+    <ClInclude Include="SensorDriver\OV5648\OV5648.h" />
+    <ClInclude Include="SensorDriver\OV5675\OV5675.h" />
+    <ClInclude Include="SensorDriver\OV5695\OV5695.h" />
+    <ClInclude Include="SensorDriver\OV8856\OV8856.h" />
+    <ClInclude Include="SensorDriver\OV9750\OV9750.h" />
+    <ClInclude Include="SensorDriver\S5K2L7\S5K2L7.h" />
+    <ClInclude Include="SensorDriver\S5K2P7\S5K2P7.h" />
+    <ClInclude Include="SensorDriver\S5K3L6\S5K3L6.h" />
+    <ClInclude Include="SensorDriver\S5K3L8XX\S5K3L8XX.h" />
+    <ClInclude Include="SensorDriver\S5K3P3\S5K3P3.h" />
+    <ClInclude Include="SensorDriver\S5K3P8\S5K3P8.h" />
+    <ClInclude Include="SensorDriver\S5K3P9SP\S5K3P9SP.h" />
+    <ClInclude Include="SensorDriver\S5K3P9SX\S5K3P9SX.h" />
+    <ClInclude Include="SensorDriver\S5K4H7YX\S5K4H7YX.h" />
+    <ClInclude Include="SensorDriver\S5K4H8YX\S5K4H8YX.h" />
+    <ClInclude Include="SensorDriver\S5K5E2YA\S5K5E2YA.h" />
+    <ClInclude Include="SensorDriver\S5K5E8YX\S5K5E8YX.h" />
+    <ClInclude Include="SensorDriver\S5K5E9\S5K5E9.h" />
+    <ClInclude Include="SensorDriver\SP0A09\SP0A09.h" />
+    <ClInclude Include="SensorDriver\SP2509V\SP2509V.h" />
+    <ClInclude Include="SensorDriver\SP250A\SP250A.h" />
+    <ClInclude Include="sensordriver\virtualsensor\virtualsensor.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UTS_Sensor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTS_Sensor.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

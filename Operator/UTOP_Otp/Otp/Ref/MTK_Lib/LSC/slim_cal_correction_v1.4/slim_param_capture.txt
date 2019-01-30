@@ -1,0 +1,52 @@
+1		//fix_shading=0,dynamic_shading=1,slim_shading=2
+Capture_4192x3104.raw             //raw_image_data_in_capture_mode_lo
+Capture_4192x3104.raw            //raw_image_data_in_capture_mode_md
+Capture_4192x3104.raw             //raw_image_data_in_capture_mode_hi
+2.raw.txt     //shading_coef_table_for_capture_raw_image_data
+1		//preview_mode=0,take_mode=1
+4192		//src_width
+3104		//src_height
+8		//src_bit_mode
+2		//src_first_pixel
+15		//m_x_grid_num
+12		//n_y_grid_num
+0		//Gr/Gb_apply_the_same_table
+0		//src_offset_x0
+0		//src_offset_y0
+4192		//src_offset_x1
+3104		//src_offset_y1
+16		//block_avg_width
+32		//correction_level
+1		//gModifyGetMaxVal
+1		//gModifySetLscCur
+0		//Pattern_distribution_center_X_Pixel_offset
+0		//Pattern_distribution_center_Y_Pixel_offset
+40              //Max_Pixel_Gain_divide_to_10_for_real_gain
+-1258667 	//Pattern_distribution_coef_a
+1845333 	//Pattern_distribution_coef_b
+-865333		//Pattern_distribution_coef_c
+-71333		//Pattern_distribution_coef_d
+0 		//Pattern_distribution_coef_e
+1000000 //Pattern_distribution_coef_f
+16 	//OB Value
+//Parameter 1.00 	= 0,0,0,0,0,1000000
+//Parameter 0.95 	= -391111,871111,-642222,112222,0,1000000
+//Parameter 0.95 = -568889,782222,-497778,84444,0,1000000
+//Parameter 0.90	= -440889,974222,-729778,96444,0,1000000
+//Parameter 0.85	= -974222,1774222,-1096444,146444,0,1000000
+//Parameter 0.80	= -1507556,2574222,-1463111,196444,0,1000000
+//Parameter 0.75	= -1329778,2236444,-1127556,-29111,0,1000000
+//Parameter 0.70 	= -725333,1045333,-498667,-121333,0,1000000
+//Parameter 0.65  = -1258667,1845333,-865333,-71333,0,1000000
+//Parameter 0.60  = -1792000,2645333,-1232000,-21333,0,1000000
+//Parameter 0.55  = -2325333,3445333,-1598667,28667,0,1000000
+//Parameter 0.50	= 497778,-1671111,1195556,-522222,0,1000000
+//Parameter 0.45  = 675556,-2862222,2811111,-1174444,0,1000000
+//Parameter 0.40	= 142222,-1062222,2444444,-1124444,0,1000000
+//Parameter 0.35  = -391111,-1262222,2077778,-1074444,0,1000000
+//Parameter 0.30  = -924444,-462222,1711111,-1024444,0,1000000
+//Parameter 0.25  = 2240000,-6346667,5060000,-1703333,0,1000000
+//Parameter 0.20  = 1706667,-5546667,4693333,-1653333,0,1000000
+//Parameter 0.15  = -3662222,5635556,-2304444,-518889,0,1000000
+//Parameter 0.10  = -3057778,4444444,-1675556,-611111,0,1000000
+//Parameter 0.05  = -3591111,5244444,-2042222,-561111,0,1000000

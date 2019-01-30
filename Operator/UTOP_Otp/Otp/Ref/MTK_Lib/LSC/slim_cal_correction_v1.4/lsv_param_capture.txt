@@ -1,0 +1,11 @@
+after_ob.raw            //raw_image_data_in_capture_mode_LO
+after_ob_correct_lo.raw	   //raw_image_after_LSC_LO
+after_ob.raw            //raw_image_data_in_capture_mode_MD
+after_ob_correct_md.raw	   //raw_image_after_LSC_MD
+after_ob.raw            //raw_image_data_in_capture_mode_HI
+after_ob_correct_hi.raw	   //raw_image_after_LSC_HI
+1		//preview_mode=0,take_mode=1
+2096		//src_width/2
+1552		//src_height/2
+8		//src_bit_mode
+2		//src_first_pixel

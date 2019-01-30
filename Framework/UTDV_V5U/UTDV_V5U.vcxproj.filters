@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{716957e9-3d7d-4b54-97ee-d16460d695a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{6ef132f0-ad51-40a9-b9ed-297ae5c63538}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTDV_V5U.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UTDV_V5U.def">
+      <Filter>Other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTDV_V5U.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="V5UDevice.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="HVSI2C.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="V5UDeviceSettingDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="V5UDeviceRegisterDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="V5UDeviceI2CDlg.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="UTDV_V5U.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="V5UDevice.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="HVSI2C.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="V5UDeviceSettingDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="V5UDeviceRegisterDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="V5UDeviceI2CDlg.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTDV_V5U.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

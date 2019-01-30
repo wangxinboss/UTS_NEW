@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ImplOperator.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="UTOP_ColorShading_Smartisan.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImplOperator.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="UTOP_ColorShading_Smartisan.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="UTOP_ColorShading_Smartisan.def">
+      <Filter>原始程式檔</Filter>
+    </None>
+    <None Include="res\UTOP_ColorShading_Smartisan.rc2">
+      <Filter>資源檔</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{470eab7c-84aa-4a2a-b831-f52c88ab98d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{b557903a-9005-40a0-b89a-0cbb4f6810cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{f6da8b82-f227-494a-8cf6-e998de56bf68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{b0f9b51b-699c-461f-8324-6e0f4a124c7e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTOP_ColorShading_Smartisan.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

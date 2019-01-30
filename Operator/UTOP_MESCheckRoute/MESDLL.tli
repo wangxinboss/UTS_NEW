@@ -1,0 +1,40 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (78904f59).
+//
+// c:\users\newsmart\desktop\nst\holitechmesdll\dll_vc++ demo\testdll\debug\mesdll.tli
+//
+// Wrapper implementations for Win32 type library MESDLL.tlb
+// compiler-generated file created 01/24/18 at 11:23:31 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ISQLServer wrapper method implementations
+//
+
+inline _bstr_t ISQLServer::CheckRoute ( _bstr_t Application, _bstr_t Barcode, _bstr_t Station, _bstr_t Line, _bstr_t Version ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CheckRoute(Application, Barcode, Station, Line, Version, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISQLServer::CommitTestData ( _bstr_t Application, _bstr_t MESData, _bstr_t TestData ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CommitTestData(Application, MESData, TestData, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISQLServer::GetSpecialValue ( _bstr_t Application, _bstr_t Type, _bstr_t Parameters ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetSpecialValue(Application, Type, Parameters, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISQLServer::UpdateSpecialValue ( _bstr_t Application, _bstr_t Type, _bstr_t UpdateParameters, _bstr_t WhereParameters ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_UpdateSpecialValue(Application, Type, UpdateParameters, WhereParameters, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}

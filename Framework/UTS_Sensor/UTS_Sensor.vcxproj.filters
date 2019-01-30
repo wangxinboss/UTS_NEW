@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{035b8b8b-c89e-40aa-b149-3404b7198560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{1c2a8e4a-9334-4839-99c3-ef22dcf962eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver">
+      <UniqueIdentifier>{17472a2b-9c8f-4ff9-8e72-3fdf8fb3462e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\SONY">
+      <UniqueIdentifier>{7e101eff-163b-44a8-8d04-e41670e9cc01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\OV">
+      <UniqueIdentifier>{b2243267-f93c-4ec9-8b23-2f4a7cdc7f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Toshiba">
+      <UniqueIdentifier>{4abd9c47-5ce7-476a-a9f1-d43c23800a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung">
+      <UniqueIdentifier>{a9a15176-e96c-4370-a760-a8c074756795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\OV\OV13855">
+      <UniqueIdentifier>{6dbd7620-e0a0-474c-aaca-67797058d38c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung\S5K3P3">
+      <UniqueIdentifier>{3b824aae-9162-458a-b073-616237fc6f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung\S5K5E2">
+      <UniqueIdentifier>{2c2e5906-1fa6-444d-892f-6f5b9992cc8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung\S5K3L8">
+      <UniqueIdentifier>{1a509dcc-ea63-4f1d-afe1-ada3309a9cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung\S5K4H8">
+      <UniqueIdentifier>{07f426d1-3400-483d-9fa0-a818b1c58efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung\S5K5E8">
+      <UniqueIdentifier>{4326712b-af13-4e37-9db8-09e259c01991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\SONY\IMX362">
+      <UniqueIdentifier>{fb44de91-a418-4cab-addf-bc9d3bc60d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung\S5K2L7A3">
+      <UniqueIdentifier>{3039729c-b733-4f9a-b091-376e968c25e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\OV\OV9750">
+      <UniqueIdentifier>{35ff1821-cf00-42ec-9c1e-b7c991d5feca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\GC">
+      <UniqueIdentifier>{90b529f3-6b13-4f6f-87a5-693655cd8e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\GC\GC5024">
+      <UniqueIdentifier>{338fbee6-2d7a-4276-a3f2-d593f9eee6a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Hynix">
+      <UniqueIdentifier>{569233a4-a33a-42ff-805b-b9c20b3710b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Hynix\Hi846">
+      <UniqueIdentifier>{dc87b706-120e-4650-a860-84fa3cbe391d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\OV\OV8856">
+      <UniqueIdentifier>{6b51ba1c-d55c-45f9-a0f2-37305274c7f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\GC\GC2385">
+      <UniqueIdentifier>{6f967f99-c9aa-4e8d-86fe-6bce8e1983d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\OV\OV4688">
+      <UniqueIdentifier>{38df141b-ec78-45bc-b119-710d2b7e147a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung\S5K3L6">
+      <UniqueIdentifier>{77f03e18-32f7-4d75-a253-ce59f028cdef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\OV\OV5695">
+      <UniqueIdentifier>{962ae693-574b-44c0-9383-021fddb1df70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\Samsung\S5K2P7">
+      <UniqueIdentifier>{c61ab819-88b7-4bae-859e-89feed387f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\SONY\IMX363">
+      <UniqueIdentifier>{bd0ee43d-7a7d-4148-b937-47f369d703cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\SensorDriver\OV\OV12A10">
+      <UniqueIdentifier>{cbb733b3-63a0-408b-bacb-2c4da1c9a4af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTS_Sensor.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UTS_Sensor.def">
+      <Filter>Other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTS_Sensor.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="AdapterDev.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\VirtualSensor\VirtualSensor.cpp">
+      <Filter>Impl\SensorDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\S5K5E2YA\S5K5E2YA.cpp">
+      <Filter>Impl\SensorDriver\Samsung\S5K5E2</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\OV13855\OV13855.cpp">
+      <Filter>Impl\SensorDriver\OV\OV13855</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\S5K3L8XX\S5K3L8XX.cpp">
+      <Filter>Impl\SensorDriver\Samsung\S5K3L8</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\S5K3P3\S5K3P3.cpp">
+      <Filter>Impl\SensorDriver\Samsung\S5K3P3</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\S5K4H8YX\S5K4H8YX.cpp">
+      <Filter>Impl\SensorDriver\Samsung\S5K4H8</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\S5K2L7\S5K2L7.cpp">
+      <Filter>Impl\SensorDriver\Samsung\S5K2L7A3</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\IMX362\IMX362.cpp">
+      <Filter>Impl\SensorDriver\SONY\IMX362</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\OV9750\OV9750.cpp">
+      <Filter>Impl\SensorDriver\OV\OV9750</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\GC5024\GC5024.cpp">
+      <Filter>Impl\SensorDriver\GC\GC5024</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\OV8856\OV8856.cpp">
+      <Filter>Impl\SensorDriver\OV\OV8856</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\GC2385\GC2385.cpp">
+      <Filter>Impl\SensorDriver\GC\GC2385</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\OV4688\OV4688.cpp">
+      <Filter>Impl\SensorDriver\OV\OV4688</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\GC5025\GC5025.cpp" />
+    <ClCompile Include="SensorDriver\IMX386\IMX386.cpp" />
+    <ClCompile Include="SensorDriver\OV16885\OV16885.cpp" />
+    <ClCompile Include="SensorDriver\S5K3P9SX\S5K3P9SX.cpp" />
+    <ClCompile Include="SensorDriver\AR1337\AR1337.cpp" />
+    <ClCompile Include="SensorDriver\S5K3L6\S5K3L6.cpp">
+      <Filter>Impl\SensorDriver\Samsung\S5K3L6</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\OV5695\OV5695.cpp">
+      <Filter>Impl\SensorDriver\OV\OV5695</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\S5K2P7\S5K2P7.cpp">
+      <Filter>Impl\SensorDriver\Samsung\S5K2P7</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\GC5025\GC5025.cpp">
+      <Filter>Impl\SensorDriver\GC</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\IMX363\IMX363.cpp">
+      <Filter>Impl\SensorDriver\SONY\IMX363</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorDriver\OV5675\OV5675.cpp" />
+    <ClCompile Include="SensorDriver\S5K3P9SP\S5K3P9SP.cpp" />
+    <ClCompile Include="SensorDriver\GC5034\GC5034.cpp" />
+    <ClCompile Include="SensorDriver\Hi546\Hi546.cpp" />
+    <ClCompile Include="SensorDriver\Hi556\Hi556.cpp" />
+    <ClCompile Include="SensorDriver\IMX214\IMX214.cpp" />
+    <ClCompile Include="SensorDriver\IMX519\IMX519.cpp" />
+    <ClCompile Include="SensorDriver\OV12A10\OV12A10.cpp" />
+    <ClCompile Include="SensorDriver\OV13858\OV13858.cpp" />
+    <ClCompile Include="SensorDriver\OV5648\OV5648.cpp" />
+    <ClCompile Include="SensorDriver\S5K4H7YX\S5K4H7YX.cpp" />
+    <ClCompile Include="SensorDriver\SP0A09\SP0A09.cpp" />
+    <ClCompile Include="SensorDriver\SP2509V\SP2509V.cpp" />
+    <ClCompile Include="SensorDriver\SP250A\SP250A.cpp" />
+    <ClCompile Include="SensorDriver\Hi846\Hi846.cpp" />
+    <ClCompile Include="SensorDriver\S5K5E8YX\S5K5E8YX.cpp" />
+    <ClCompile Include="SensorDriver\GC8024\GC8024.cpp" />
+    <ClCompile Include="SensorDriver\IMX499\IMX499.cpp" />
+    <ClCompile Include="SensorDriver\Hynix1333\Hynix1333.cpp" />
+    <ClCompile Include="SensorDriver\Hynix843\Hynix843.cpp" />
+    <ClCompile Include="SensorDriver\OV12870\OV12870.cpp" />
+    <ClCompile Include="SensorDriver\S5K3P8\S5K3P8.cpp" />
+    <ClCompile Include="SensorDriver\S5K5E9\S5K5E9.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="UTS_Sensor.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="AdapterDev.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="sensordriver\virtualsensor\virtualsensor.h">
+      <Filter>Impl\SensorDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDefine.h" />
+    <ClInclude Include="SensorDriver\S5K5E2YA\S5K5E2YA.h">
+      <Filter>Impl\SensorDriver\Samsung\S5K5E2</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\OV13855\OV13855.h">
+      <Filter>Impl\SensorDriver\OV\OV13855</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\S5K3L8XX\S5K3L8XX.h">
+      <Filter>Impl\SensorDriver\Samsung\S5K3L8</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\S5K3P3\S5K3P3.h">
+      <Filter>Impl\SensorDriver\Samsung\S5K3P3</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\S5K4H8YX\S5K4H8YX.h">
+      <Filter>Impl\SensorDriver\Samsung\S5K4H8</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\S5K2L7\S5K2L7.h">
+      <Filter>Impl\SensorDriver\Samsung\S5K2L7A3</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\IMX362\IMX362.h">
+      <Filter>Impl\SensorDriver\SONY\IMX362</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\OV9750\OV9750.h">
+      <Filter>Impl\SensorDriver\OV\OV9750</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\GC5024\GC5024.h">
+      <Filter>Impl\SensorDriver\GC\GC5024</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\OV8856\OV8856.h">
+      <Filter>Impl\SensorDriver\OV\OV8856</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\GC2385\GC2385.h">
+      <Filter>Impl\SensorDriver\GC\GC2385</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\OV4688\OV4688.h">
+      <Filter>Impl\SensorDriver\OV\OV4688</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\GC5025\GC5025.h" />
+    <ClInclude Include="SensorDriver\IMX386\IMX386.h" />
+    <ClInclude Include="SensorDriver\OV16885\OV16885.h" />
+    <ClInclude Include="SensorDriver\S5K3P9SX\S5K3P9SX.h" />
+    <ClInclude Include="SensorDriver\AR1337\AR1337.h" />
+    <ClInclude Include="SensorDriver\S5K3L6\S5K3L6.h">
+      <Filter>Impl\SensorDriver\Samsung\S5K3L6</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\OV5695\OV5695.h">
+      <Filter>Impl\SensorDriver\OV\OV5695</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\S5K2P7\S5K2P7.h">
+      <Filter>Impl\SensorDriver\Samsung\S5K2P7</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\GC5025\GC5025.h">
+      <Filter>Impl\SensorDriver\GC</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\IMX363\IMX363.h">
+      <Filter>Impl\SensorDriver\SONY\IMX363</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDriver\OV5675\OV5675.h" />
+    <ClInclude Include="SensorDriver\S5K3P9SP\S5K3P9SP.h" />
+    <ClInclude Include="SensorDriver\GC5034\GC5034.h" />
+    <ClInclude Include="SensorDriver\Hi546\Hi546.h" />
+    <ClInclude Include="SensorDriver\Hi556\Hi556.h" />
+    <ClInclude Include="SensorDriver\IMX214\IMX214.h" />
+    <ClInclude Include="SensorDriver\IMX519\IMX519.h" />
+    <ClInclude Include="SensorDriver\OV12A10\OV12A10.h" />
+    <ClInclude Include="SensorDriver\OV13858\OV13858.h" />
+    <ClInclude Include="SensorDriver\OV5648\OV5648.h" />
+    <ClInclude Include="SensorDriver\S5K4H7YX\S5K4H7YX.h" />
+    <ClInclude Include="SensorDriver\SP0A09\SP0A09.h" />
+    <ClInclude Include="SensorDriver\SP2509V\SP2509V.h" />
+    <ClInclude Include="SensorDriver\SP250A\SP250A.h" />
+    <ClInclude Include="SensorDriver\Hi846\Hi846.h" />
+    <ClInclude Include="SensorDriver\S5K5E8YX\S5K5E8YX.h" />
+    <ClInclude Include="SensorDriver\GC8024\GC8024.h" />
+    <ClInclude Include="SensorDriver\IMX499\IMX499.h" />
+    <ClInclude Include="SensorDriver\Hynix1333\Hynix1333.h" />
+    <ClInclude Include="SensorDriver\Hynix843\Hynix843.h" />
+    <ClInclude Include="SensorDriver\OV12870\OV12870.h" />
+    <ClInclude Include="SensorDriver\S5K3P8\S5K3P8.h" />
+    <ClInclude Include="SensorDriver\S5K5E9\S5K5E9.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTS_Sensor.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

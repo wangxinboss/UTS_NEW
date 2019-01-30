@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{4e4a49cd-0813-4ecf-adea-2c2f1724fe60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VirtualEEProm">
+      <UniqueIdentifier>{ae2b9355-0670-406f-b442-3fa7a0838650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="24C16">
+      <UniqueIdentifier>{b74354d5-25d1-4e15-8184-339f35fe52fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="24C32">
+      <UniqueIdentifier>{e1cc4147-4715-4727-9b15-248f9c13f291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="24C64">
+      <UniqueIdentifier>{7abb5117-870a-42e3-af40-4cfdabd86fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZC533">
+      <UniqueIdentifier>{a19000e0-2478-4aff-8253-91edfee4cd4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FM24C64D">
+      <UniqueIdentifier>{45e007ac-0c97-4118-9395-a1842bb9c0fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BL24C64">
+      <UniqueIdentifier>{4320a4f5-6eec-4c51-baaf-79740493242a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CAT24C64">
+      <UniqueIdentifier>{4a06ba50-09e0-4dab-a3c9-5ee1f0c3dfac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="24P64">
+      <UniqueIdentifier>{fdd44b0f-5c14-474e-b9b1-76fd007a95f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GT9767">
+      <UniqueIdentifier>{82f69104-1c69-402e-9550-2cab226a6d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="M24C64">
+      <UniqueIdentifier>{2221d964-50ee-418a-be4f-c558758bd734}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="UTS_EEProm.def">
+      <Filter>原始程式檔</Filter>
+    </None>
+    <None Include="res\UTS_EEProm.rc2">
+      <Filter>資源檔</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UTS_EEProm.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\VirtualEEProm\VirtualEEProm.cpp">
+      <Filter>VirtualEEProm</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\24C16\24C16.cpp">
+      <Filter>24C16</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\24C32\24C32.cpp">
+      <Filter>24C32</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\24C64\24C64.cpp">
+      <Filter>24C64</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\zc533\ZC533.cpp">
+      <Filter>ZC533</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\FM24C64D\24C64D.cpp">
+      <Filter>FM24C64D</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\BL24C64\BL24C64.cpp">
+      <Filter>BL24C64</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\CAT24C64\CAT24C64.cpp">
+      <Filter>CAT24C64</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\24P64\24P64.cpp">
+      <Filter>24P64</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\GT9767\GT9767.cpp">
+      <Filter>GT9767</Filter>
+    </ClCompile>
+    <ClCompile Include="EEProm\M24C64\M24C64.cpp">
+      <Filter>M24C64</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UTS_EEProm.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\VirtualEEProm\VirtualEEProm.h">
+      <Filter>VirtualEEProm</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\24C16\24C16.h">
+      <Filter>24C16</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\24C32\24C32.h">
+      <Filter>24C32</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\24C64\24C64.h">
+      <Filter>24C64</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\zc533\ZC533.h">
+      <Filter>ZC533</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\FM24C64D\24C64D.h">
+      <Filter>FM24C64D</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\BL24C64\BL24C64.h">
+      <Filter>BL24C64</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\CAT24C64\CAT24C64.h">
+      <Filter>CAT24C64</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\24P64\24P64.h">
+      <Filter>24P64</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\GT9767\GT9767.h">
+      <Filter>GT9767</Filter>
+    </ClInclude>
+    <ClInclude Include="EEProm\M24C64\M24C64.h">
+      <Filter>M24C64</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTS_EEProm.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

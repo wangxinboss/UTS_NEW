@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)..\..\3rdparty\ddm\include;$(IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath);$(SolutionDir)..\..\3rdparty\ddm\lib\Debug</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link />
+    <Link>
+      <AdditionalDependencies>ddm.lib;CommonFunc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

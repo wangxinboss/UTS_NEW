@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="other">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{fb1c5e10-fe3f-4932-819f-1d614361ebea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTOP_Play.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UTOP_Play.def">
+      <Filter>other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="UTOP_Play.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayOperator.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UTOP_Play.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayOperator.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTOP_Play.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
